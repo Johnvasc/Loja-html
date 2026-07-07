@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <title>Produtos</title>
+</head>
+<body class="container">
+    <form action="" class="mt-4 ">
+        <h2>Adicionar Produto</h2>
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" id="nome" name="nome" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="preço" class="form-label">Preço:</label>
+            <input type="number" id="preço" name="preço" step="0.01" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="categoria" class="form-label">Categoria:</label>
+            <select id="categoria" name="categoria" class="form-control">
+                <option value="nacional">Nacional</option>
+                <option value="importado">Importado</option>
+                <option value="reavaliado">Reavaliado</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="quantidade" class="form-label">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="0" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="promocao" class="form-label">Promoção:</label>
+            <input type="checkbox" id="promocao" name="promocao" class="form-check-input">
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Adicionar Produto</button>
+        </div>
+
+    </form>
+</body>
+</html>
